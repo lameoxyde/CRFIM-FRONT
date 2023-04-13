@@ -1,15 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/style.scss';
-import ColorSwitcher from '../common/elements/color-switcher/ColorSwitcher';
+import '@/styles/globals.css'
 
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-		<ColorSwitcher />
-		<Component {...pageProps} />
-    </>
-  )
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-export default MyApp
