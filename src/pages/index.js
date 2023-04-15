@@ -42,6 +42,7 @@ export async function getServerSideProps() {
     "https://backend.crfimmadagascar.org/api/content/item/posts"
   );
   const allPosts = res.json();
+  console.log(allPosts);
   return {
     props: { allPosts },
   };
